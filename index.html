@@ -270,8 +270,7 @@
           <div class="contact-promise"><span>🐾</span><p><strong>You run your business.</strong><br>We'll handle the web.</p></div>
         </div>
 
-        <!-- Replace YOUR_FORMSPREE_ID below when your DawgsWeb Formspree form is created. -->
-        <form class="contact-form reveal" action="https://formspree.io/f/xbglkkqr" method="POST">
+        <form id="contact-form" class="contact-form reveal" action="https://formspree.io/f/xbglkkqr" method="POST">
           <input type="hidden" name="_subject" value="New DawgsWeb Website Lead">
           <div class="field-row">
             <label>First Name<input type="text" name="first_name" autocomplete="given-name" required></label>
@@ -290,8 +289,8 @@
             </select>
           </label>
           <label>Tell us what you need<textarea name="message" rows="5" placeholder="Tell us about your business, your current website (if any), and what you'd like the new site to do." required></textarea></label>
-          <button class="btn btn-full" type="submit">Let's Build My Website →</button>
-          <p class="form-note">We'll only use this information to respond to your inquiry.</p>
+          <button class="btn btn-full" type="submit" id="submit-button">Let's Build My Website →</button>
+          <p class="form-note" id="form-status" aria-live="polite">We'll only use this information to respond to your inquiry.</p>
         </form>
       </div>
     </section>
