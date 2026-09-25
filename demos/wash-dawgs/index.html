@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Wash Dawgs Pressure Cleaning | Athens, GA Pressure Washing</title>
+
+  <meta name="description"
+        content="Professional pressure washing and exterior cleaning in Athens, Georgia. House washing, concrete cleaning, roof cleaning, gutters, windows and more.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap"
+        rel="stylesheet">
+
+  <style>
+
+    :root {
+      --navy: #071c2c;
+      --navy-light: #0c2c43;
+      --blue: #168ad1;
+      --blue-bright: #25a9f0;
+      --blue-light: #e8f6fd;
+
+      --white: #ffffff;
+      --offwhite: #f4f8fa;
+
+      --text: #263640;
+      --muted: #687984;
+      --border: #dce6eb;
+
+      --radius: 18px;
+      --shadow: 0 20px 45px rgba(5, 30, 45, .13);
+    }
+
+
+    /* ========================================
+       RESET
+    ======================================== */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: var(--text);
+      background: white;
+      line-height: 1.65;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1180px, 90%);
+      margin: auto;
+    }
+
+
+    /* ========================================
+       DAWGSWEB DEMO BAR
+    ======================================== */
+
+    .demo-bar {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 8px 15px;
+      font-size: 13px;
+      letter-spacing: .3px;
+    }
+
+    .demo-bar strong {
+      color: #42baff;
+    }
+
+
+    /* ========================================
+       TOP BAR
+    ======================================== */
+
+    .topbar {
+      background: var(--navy);
+      color: rgba(255,255,255,.88);
+      font-size: 14px;
+    }
+
+    .topbar-inner {
+      min-height: 43px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .topbar a {
+      color: white;
+      font-weight: 700;
+    }
+
+    .topbar a:hover {
+      color: var(--blue-bright);
+    }
+
+
+    /* ========================================
+       NAVIGATION
+    ======================================== */
+
+    header {
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 3px 15px rgba(0,0,0,.06);
+    }
+
+    .nav {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+    }
+
+    .logo-mark {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 26px;
+    }
+
+    .logo-name {
+      font-family: "Montserrat", sans-serif;
+      font-size: 21px;
+      font-weight: 900;
+      line-height: 1;
+      color: var(--navy);
+      text-transform: uppercase;
+    }
+
+    .logo-name span {
+      display: block;
+      font-family: "DM Sans", sans-serif;
+      color: var(--blue);
+      font-size: 10px;
+      letter-spacing: 2.1px;
+      margin-top: 6px;
+      font-weight: 700;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-weight: 600;
+    }
+
+    nav a {
+      transition: .2s;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    .nav-cta {
+      background: var(--blue);
+      color: white;
+      padding: 13px 20px;
+      border-radius: 8px;
+    }
+
+    .nav-cta:hover {
+      background: var(--navy);
+      color: white;
+    }
+
+
+    /* ========================================
+       HERO
+    ======================================== */
+
+    .hero {
+      min-height: 690px;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(4,21,34,.96) 0%,
+          rgba(4,21,34,.89) 44%,
+          rgba(4,21,34,.30) 100%
+        ),
+        url("https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1900&q=85");
+
+      background-size: cover;
+      background-position: center;
+
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      padding: 95px 0;
+    }
+
+    .eyebrow {
+      color: var(--blue-bright);
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: clamp(45px, 6.5vw, 76px);
+      line-height: 1;
+      letter-spacing: -2.5px;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 span {
+      color: var(--blue-bright);
+    }
+
+    .hero p {
+      max-width: 640px;
+      color: rgba(255,255,255,.86);
+      font-size: 19px;
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .btn-primary {
+      background: var(--blue-bright);
+      color: var(--navy);
+    }
+
+    .btn-primary:hover {
+      background: white;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 2px solid rgba(255,255,255,.75);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--navy);
+    }
+
+
+    /* ========================================
+       TRUST STRIP
+    ======================================== */
+
+    .trust-strip {
+      background: white;
+      box-shadow: 0 -10px 30px rgba(0,0,0,.08);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .trust-item {
+      text-align: center;
+      padding: 28px 15px;
+      border-right: 1px solid var(--border);
+    }
+
+    .trust-item:last-child {
+      border-right: none;
+    }
+
+    .trust-item strong {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      color: var(--navy);
+      font-size: 20px;
+    }
+
+    .trust-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 3px;
+    }
+
+
+    /* ========================================
+       GENERAL SECTIONS
+    ======================================== */
+
+    section {
+      padding: 95px 0;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: clamp(31px, 4vw, 45px);
+      color: var(--navy);
+      line-height: 1.13;
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+
+    /* ========================================
+       SERVICES
+    ======================================== */
+
+    .services {
+      background: var(--offwhite);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,.06);
+      transition: .25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow);
+    }
+
+    .service-card img {
+      height: 225px;
+      object-fit: cover;
+    }
+
+    .service-body {
+      padding: 27px;
+    }
+
+    .service-body h3 {
+      font-family: "Montserrat", sans-serif;
+      color: var(--navy);
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .service-body p {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .learn {
+      color: var(--blue);
+      font-weight: 700;
+    }
+
+
+    /* ========================================
+       TRANSFORMATION
+    ======================================== */
+
+    .transform {
+      background: white;
+    }
+
+    .transform-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .transform-image {
+      position: relative;
+    }
+
+    .transform-image img {
+      height: 560px;
+      object-fit: cover;
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .transform-badge {
+      position: absolute;
+      bottom: 25px;
+      right: -25px;
+      background: var(--blue-bright);
+      color: var(--navy);
+      padding: 21px 26px;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      font-weight: 600;
+    }
+
+    .transform-badge strong {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .transform h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: clamp(32px, 4vw, 46px);
+      color: var(--navy);
+      line-height: 1.12;
+      margin-bottom: 20px;
+    }
+
+    .transform p {
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 18px;
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 13px;
+      margin: 28px 0 33px;
+    }
+
+    .check {
+      font-weight: 600;
+    }
+
+    .check::before {
+      content: "✓";
+      display: inline-grid;
+      place-items: center;
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      border-radius: 50%;
+      background: var(--blue-light);
+      color: var(--blue);
+      font-size: 13px;
+    }
+
+
+    /* ========================================
+       REVIEWS / REPUTATION
+    ======================================== */
+
+    .reviews {
+      background: var(--navy);
+      color: white;
+    }
+
+    .reviews .section-heading h2 {
+      color: white;
+    }
+
+    .reviews .section-heading p {
+      color: rgba(255,255,255,.68);
+    }
+
+    .rating {
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    .stars {
+      color: #ffd55b;
+      font-size: 22px;
+      letter-spacing: 2px;
+    }
+
+    .rating strong {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-size: 32px;
+      margin-top: 7px;
+    }
+
+    .rating span {
+      color: rgba(255,255,255,.7);
+    }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .review-card {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.11);
+      border-radius: 17px;
+      padding: 29px;
+    }
+
+    .review-card p {
+      margin-top: 15px;
+      color: rgba(255,255,255,.82);
+    }
+
+    .review-theme {
+      margin-top: 18px;
+      color: var(--blue-bright);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+
+    /* ========================================
+       PROCESS
+    ======================================== */
+
+    .process {
+      background: var(--offwhite);
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+    }
+
+    .process-card {
+      text-align: center;
+    }
+
+    .process-number {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: var(--blue);
+      color: white;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 20px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 900;
+      font-size: 21px;
+    }
+
+    .process-card h3 {
+      font-family: "Montserrat", sans-serif;
+      color: var(--navy);
+      margin-bottom: 9px;
+    }
+
+    .process-card p {
+      color: var(--muted);
+    }
+
+
+    /* ========================================
+       SERVICE AREA
+    ======================================== */
+
+    .area {
+      background: white;
+    }
+
+    .area-box {
+      max-width: 960px;
+      margin: auto;
+      background: var(--blue-light);
+      padding: 55px;
+      border-radius: 22px;
+      text-align: center;
+    }
+
+    .area-box h2 {
+      font-family: "Montserrat", sans-serif;
+      color: var(--navy);
+      font-size: clamp(30px, 4vw, 43px);
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .area-box p {
+      max-width: 700px;
+      margin: auto;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .area-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .area-tag {
+      background: white;
+      padding: 9px 17px;
+      border-radius: 30px;
+      font-weight: 600;
+      color: var(--navy);
+      font-size: 14px;
+    }
+
+
+    /* ========================================
+       CTA
+    ======================================== */
+
+    .cta {
+      background: var(--blue-bright);
+      padding: 80px 0;
+    }
+
+    .cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .cta h2 {
+      font-family: "Montserrat", sans-serif;
+      color: var(--navy);
+      font-size: clamp(31px, 4vw, 46px);
+      line-height: 1.1;
+    }
+
+    .cta p {
+      margin-top: 9px;
+      color: #163c52;
+      font-size: 17px;
+    }
+
+    .cta .btn {
+      background: var(--navy);
+      color: white;
+      white-space: nowrap;
+    }
+
+    .cta .btn:hover {
+      background: white;
+      color: var(--navy);
+    }
+
+
+    /* ========================================
+       FOOTER
+    ======================================== */
+
+    footer {
+      background: #041521;
+      color: rgba(255,255,255,.72);
+      padding: 65px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 55px;
+      margin-bottom: 50px;
+    }
+
+    footer h3 {
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      margin-bottom: 16px;
+    }
+
+    footer p,
+    footer a,
+    footer span {
+      font-size: 15px;
+    }
+
+    footer a:hover {
+      color: var(--blue-bright);
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 9px;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,.10);
+      padding-top: 23px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+
+    /* ========================================
+       MOBILE
+    ======================================== */
+
+    @media (max-width: 950px) {
+
+      nav a:not(.nav-cta) {
+        display: none;
+      }
+
+      .service-grid,
+      .review-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .transform-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .transform-badge {
+        right: 20px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+
+    @media (max-width: 700px) {
+
+      .demo-bar {
+        font-size: 11px;
+      }
+
+      .topbar-inner {
+        justify-content: center;
+      }
+
+      .top-message {
+        display: none;
+      }
+
+      .nav {
+        min-height: 74px;
+      }
+
+      .logo-name {
+        font-size: 15px;
+      }
+
+      .logo-mark {
+        width: 40px;
+        height: 40px;
+        font-size: 21px;
+      }
+
+      .nav-cta {
+        font-size: 12px;
+        padding: 10px 12px;
+      }
+
+      .hero {
+        min-height: 650px;
+
+        background:
+          linear-gradient(
+            rgba(4,21,34,.89),
+            rgba(4,21,34,.89)
+          ),
+          url("https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1000&q=80");
+
+        background-size: cover;
+        background-position: center;
+      }
+
+      .hero h1 {
+        letter-spacing: -1px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .trust-item:nth-child(2) {
+        border-right: none;
+      }
+
+      .trust-item:nth-child(-n+2) {
+        border-bottom: 1px solid var(--border);
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .transform-image img {
+        height: 420px;
+      }
+
+      .check-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .area-box {
+        padding: 40px 22px;
+      }
+
+      .cta-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- ========================================
+     DAWGSWEB CONCEPT BAR
+======================================== -->
+
+<div class="demo-bar">
+  <strong>WEBSITE CONCEPT</strong> — Prepared by DawgsWeb • Athens, Georgia
+</div>
+
+
+<!-- ========================================
+     TOP BAR
+======================================== -->
+
+<div class="topbar">
+
+  <div class="container topbar-inner">
+
+    <div class="top-message">
+      Firefighter-Owned • Athens, Georgia
+    </div>
+
+    <div>
+      <a href="tel:7062960018">
+        Call: (706) 296-0018
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ========================================
+     NAVIGATION
+======================================== -->
+
+<header>
+
+  <div class="container nav">
+
+    <a href="#" class="logo">
+
+      <div class="logo-mark">
+        🐾
+      </div>
+
+      <div class="logo-name">
+        Wash Dawgs
+        <span>Pressure Cleaning</span>
+      </div>
+
+    </a>
+
+
+    <nav>
+
+      <a href="#services">Services</a>
+      <a href="#results">Why Us</a>
+      <a href="#process">How It Works</a>
+
+      <a href="tel:7062960018" class="nav-cta">
+        Free Estimate
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<!-- ========================================
+     HERO
+======================================== -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        Athens, Georgia Exterior Cleaning
+      </div>
+
+      <h1>
+        Dirty Property?<br>
+        <span>Release the Dawgs.</span>
+      </h1>
+
+      <p>
+        Professional pressure washing and exterior cleaning
+        that brings homes and properties back to life throughout
+        Athens and surrounding communities.
+      </p>
+
+
+      <div class="hero-buttons">
+
+        <a href="tel:7062960018" class="btn btn-primary">
+          Get a Free Estimate
+        </a>
+
+        <a href="#services" class="btn btn-outline">
+          See What We Clean
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================
+     TRUST STRIP
+======================================== -->
+
+<div class="trust-strip">
+
+  <div class="container trust-grid">
+
+    <div class="trust-item">
+      <strong>Firefighter-Owned</strong>
+      <span>Local Athens Business</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>5.0 ★</strong>
+      <span>Google Rating</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>Licensed & Insured</strong>
+      <span>Professional Service</span>
+    </div>
+
+    <div class="trust-item">
+      <strong>Free Estimates</strong>
+      <span>Let's Talk About Your Property</span>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ========================================
+     SERVICES
+======================================== -->
+
+<section class="services" id="services">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+        What We Clean
+      </div>
+
+      <h2>
+        Give Your Property Its Curb Appeal Back.
+      </h2>
+
+      <p>
+        Dirt, mildew and buildup can make a great property look
+        tired. Wash Dawgs helps restore exterior surfaces and
+        bring back that clean, cared-for appearance.
+      </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+
+      <article class="service-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
+          alt="Clean residential home exterior">
+
+        <div class="service-body">
+
+          <h3>House Washing</h3>
+
+          <p>
+            Remove exterior grime and buildup and give your
+            home's siding a cleaner, brighter appearance.
+          </p>
+
+          <a href="tel:7062960018" class="learn">
+            Get an Estimate →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="service-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&w=900&q=80"
+          alt="Clean driveway and home">
+
+        <div class="service-body">
+
+          <h3>Concrete Cleaning</h3>
+
+          <p>
+            Refresh driveways, walkways and other concrete
+            surfaces by removing years of dirt and staining.
+          </p>
+
+          <a href="tel:7062960018" class="learn">
+            Get an Estimate →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="service-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=900&q=80"
+          alt="Residential roof">
+
+        <div class="service-body">
+
+          <h3>Roof Cleaning</h3>
+
+          <p>
+            Exterior roof cleaning helps remove unsightly
+            buildup and improves the overall appearance of
+            your home.
+          </p>
+
+          <a href="tel:7062960018" class="learn">
+            Get an Estimate →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="service-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1560185008-b033106af5c3?auto=format&fit=crop&w=900&q=80"
+          alt="Clean home windows">
+
+        <div class="service-body">
+
+          <h3>Window Cleaning</h3>
+
+          <p>
+            Clean exterior windows make the entire property
+            look brighter, sharper and better maintained.
+          </p>
+
+          <a href="tel:7062960018" class="learn">
+            Get an Estimate →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="service-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=900&q=80"
+          alt="Home exterior and gutters">
+
+        <div class="service-body">
+
+          <h3>Gutter Cleaning</h3>
+
+          <p>
+            Keep gutters clear and help maintain the clean,
+            finished appearance of your home's exterior.
+          </p>
+
+          <a href="tel:7062960018" class="learn">
+            Get an Estimate →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="service-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80"
+          alt="Outdoor deck and patio area">
+
+        <div class="service-body">
+
+          <h3>Decks & Outdoor Areas</h3>
+
+          <p>
+            Bring patios, decks and outdoor living areas
+            back to a cleaner and more inviting condition.
+          </p>
+
+          <a href="tel:7062960018" class="learn">
+            Get an Estimate →
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================
+     TRANSFORMATION
+======================================== -->
+
+<section class="transform" id="results">
+
+  <div class="container transform-grid">
+
+
+    <div class="transform-image">
+
+      <img
+        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1100&q=85"
+        alt="Exterior cleaning project">
+
+      <div class="transform-badge">
+        <strong>Big Difference.</strong>
+        One clean property.
+      </div>
+
+    </div>
+
+
+    <div>
+
+      <div class="eyebrow">
+        The Wash Dawgs Difference
+      </div>
+
+      <h2>
+        The Kind of Clean Your Neighbors Notice.
+      </h2>
+
+      <p>
+        Exterior surfaces gradually collect dirt, organic
+        buildup and stains. Because it happens slowly, you
+        don't always realize how much the appearance has changed.
+      </p>
+
+      <p>
+        That's what makes professional exterior cleaning so
+        satisfying — the difference can be immediate.
+      </p>
+
+
+      <div class="check-grid">
+
+        <div class="check">House Washing</div>
+        <div class="check">Concrete Cleaning</div>
+        <div class="check">Roof Cleaning</div>
+        <div class="check">Window Cleaning</div>
+        <div class="check">Gutter Cleaning</div>
+        <div class="check">Deck Cleaning</div>
+
+      </div>
+
+
+      <a href="tel:7062960018" class="btn btn-primary">
+        Call (706) 296-0018
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================
+     REPUTATION
+======================================== -->
+
+<section class="reviews">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+        Local Reputation
+      </div>
+
+      <h2>
+        Athens Homeowners Love Their Wash Dawgs.
+      </h2>
+
+      <p>
+        Great exterior cleaning is about more than equipment.
+        Communication, reliability and attention to detail matter too.
+      </p>
+
+    </div>
+
+
+    <div class="rating">
+
+      <div class="stars">
+        ★★★★★
+      </div>
+
+      <strong>
+        5.0 Google Rating
+      </strong>
+
+      <span>
+        Built through local customer experiences
+      </span>
+
+    </div>
+
+
+    <div class="review-grid">
+
+
+      <div class="review-card">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <p>
+          Customers regularly highlight responsive communication
+          and professional service from the first contact through
+          completion of the job.
+        </p>
+
+        <div class="review-theme">
+          Communication
+        </div>
+
+      </div>
+
+
+      <div class="review-card">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <p>
+          Attention to detail and care for the property are common
+          themes in the feedback customers leave about their
+          Wash Dawgs experience.
+        </p>
+
+        <div class="review-theme">
+          Attention to Detail
+        </div>
+
+      </div>
+
+
+      <div class="review-card">
+
+        <div class="stars">
+          ★★★★★
+        </div>
+
+        <p>
+          Homeowners notice the transformation after exterior
+          surfaces are cleaned — especially on concrete,
+          siding and other high-visibility areas.
+        </p>
+
+        <div class="review-theme">
+          Visible Results
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================
+     PROCESS
+======================================== -->
+
+<section class="process" id="process">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+        Simple From Start to Finish
+      </div>
+
+      <h2>
+        Getting Your Property Clean Is Easy.
+      </h2>
+
+    </div>
+
+
+    <div class="process-grid">
+
+
+      <div class="process-card">
+
+        <div class="process-number">
+          1
+        </div>
+
+        <h3>
+          Request an Estimate
+        </h3>
+
+        <p>
+          Call Wash Dawgs and tell us what areas of your
+          property need attention.
+        </p>
+
+      </div>
+
+
+      <div class="process-card">
+
+        <div class="process-number">
+          2
+        </div>
+
+        <h3>
+          Schedule Your Cleaning
+        </h3>
+
+        <p>
+          Choose a convenient time and we'll get your
+          exterior-cleaning project scheduled.
+        </p>
+
+      </div>
+
+
+      <div class="process-card">
+
+        <div class="process-number">
+          3
+        </div>
+
+        <h3>
+          Enjoy the Difference
+        </h3>
+
+        <p>
+          Step outside and enjoy a cleaner, brighter,
+          better-looking property.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================
+     SERVICE AREA
+======================================== -->
+
+<section class="area">
+
+  <div class="container">
+
+    <div class="area-box">
+
+      <div class="eyebrow">
+        Local Exterior Cleaning
+      </div>
+
+      <h2>
+        Serving Athens & Surrounding Communities
+      </h2>
+
+      <p>
+        Contact Wash Dawgs to discuss your property,
+        the services you need and availability in your area.
+      </p>
+
+
+      <div class="area-tags">
+
+        <div class="area-tag">Athens</div>
+        <div class="area-tag">Watkinsville</div>
+        <div class="area-tag">Bogart</div>
+        <div class="area-tag">Oconee County</div>
+        <div class="area-tag">Surrounding Areas</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================
+     CTA
+======================================== -->
+
+<section class="cta">
+
+  <div class="container cta-inner">
+
+    <div>
+
+      <h2>
+        Ready to Release the Dawgs?
+      </h2>
+
+      <p>
+        Tell us what needs cleaning and request your free estimate.
+      </p>
+
+    </div>
+
+
+    <a href="tel:7062960018" class="btn">
+      Call (706) 296-0018
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================
+     FOOTER
+======================================== -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+
+      <div>
+
+        <h3>
+          Wash Dawgs Pressure Cleaning
+        </h3>
+
+        <p>
+          Professional exterior cleaning and pressure washing
+          serving Athens and surrounding Georgia communities.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Services
+        </h3>
+
+        <div class="footer-links">
+
+          <a href="#services">House Washing</a>
+          <a href="#services">Concrete Cleaning</a>
+          <a href="#services">Roof Cleaning</a>
+          <a href="#services">Window Cleaning</a>
+          <a href="#services">Gutter Cleaning</a>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Contact
+        </h3>
+
+        <div class="footer-links">
+
+          <a href="tel:7062960018">
+            (706) 296-0018
+          </a>
+
+          <span>
+            Athens, Georgia Area
+          </span>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 Wash Dawgs Pressure Cleaning
+
+      <br><br>
+
+      Website concept prepared by DawgsWeb • Athens, Georgia
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
