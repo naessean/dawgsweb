@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Classic Construction & Remodeling | Athens, GA</title>
+
+  <meta name="description"
+        content="Classic Construction & Remodeling provides custom home building, remodeling, additions, kitchens, bathrooms, cabinetry and residential construction in the Athens, Georgia area.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+  <style>
+    :root {
+      --charcoal: #202322;
+      --dark: #151817;
+      --green: #39463e;
+      --tan: #b9976b;
+      --tan-light: #d6bea0;
+      --cream: #f5f1eb;
+      --white: #ffffff;
+      --text: #343936;
+      --muted: #707771;
+      --border: #e2ddd5;
+      --radius: 16px;
+      --shadow: 0 20px 50px rgba(25, 28, 26, .14);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: var(--text);
+      line-height: 1.65;
+      background: var(--white);
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1180px, 90%);
+      margin: auto;
+    }
+
+    /* DEMO BAR */
+
+    .demo-bar {
+      background: #0d0d0d;
+      color: #fff;
+      text-align: center;
+      padding: 8px 15px;
+      font-size: 13px;
+    }
+
+    .demo-bar strong {
+      color: var(--tan-light);
+    }
+
+    /* TOP BAR */
+
+    .topbar {
+      background: var(--dark);
+      color: rgba(255,255,255,.78);
+      font-size: 14px;
+    }
+
+    .topbar-inner {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .topbar a {
+      color: white;
+      font-weight: 700;
+    }
+
+    .topbar a:hover {
+      color: var(--tan-light);
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: white;
+      box-shadow: 0 3px 16px rgba(0,0,0,.06);
+    }
+
+    .nav {
+      min-height: 88px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .logo {
+      font-family: "Montserrat", sans-serif;
+      color: var(--dark);
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.05;
+      text-transform: uppercase;
+    }
+
+    .logo span {
+      display: block;
+      color: var(--tan);
+      font-family: "DM Sans", sans-serif;
+      font-size: 10px;
+      letter-spacing: 2.3px;
+      margin-top: 7px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--tan);
+    }
+
+    .nav-cta {
+      background: var(--dark);
+      color: white;
+      padding: 13px 20px;
+      border-radius: 6px;
+    }
+
+    .nav-cta:hover {
+      background: var(--tan);
+      color: white;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 700px;
+      display: flex;
+      align-items: center;
+      color: white;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(15,18,17,.94) 0%,
+          rgba(15,18,17,.82) 45%,
+          rgba(15,18,17,.25) 100%
+        ),
+        url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1900&q=85");
+
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      padding: 100px 0;
+    }
+
+    .eyebrow {
+      color: var(--tan-light);
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 17px;
+    }
+
+    .hero h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: clamp(46px, 6vw, 76px);
+      line-height: 1.02;
+      letter-spacing: -2px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 span {
+      color: var(--tan-light);
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: 19px;
+      color: rgba(255,255,255,.85);
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 25px;
+      border-radius: 6px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .btn-primary {
+      background: var(--tan);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: white;
+      color: var(--dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 2px solid rgba(255,255,255,.7);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--dark);
+    }
+
+    /* TRUST */
+
+    .trust {
+      background: white;
+      box-shadow: 0 -8px 30px rgba(0,0,0,.08);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .trust-item {
+      text-align: center;
+      padding: 28px 15px;
+      border-right: 1px solid var(--border);
+    }
+
+    .trust-item:last-child {
+      border-right: none;
+    }
+
+    .trust-item strong {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      color: var(--dark);
+      font-size: 18px;
+    }
+
+    .trust-item span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* GENERAL */
+
+    section {
+      padding: 95px 0;
+    }
+
+    .section-heading {
+      max-width: 750px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: clamp(32px, 4vw, 46px);
+      color: var(--dark);
+      line-height: 1.12;
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    /* SERVICES */
+
+    .services {
+      background: var(--cream);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .service-card {
+      background: white;
+      overflow: hidden;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 30px rgba(0,0,0,.06);
+      transition: .25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow);
+    }
+
+    .service-card img {
+      height: 235px;
+      object-fit: cover;
+    }
+
+    .service-content {
+      padding: 27px;
+    }
+
+    .service-content h3 {
+      font-family: "Montserrat", sans-serif;
+      color: var(--dark);
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .service-content p {
+      color: var(--muted);
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .about-images {
+      position: relative;
+      padding-right: 35px;
+      padding-bottom: 35px;
+    }
+
+    .about-main {
+      height: 560px;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .about-small {
+      position: absolute;
+      width: 250px;
+      height: 190px;
+      object-fit: cover;
+      right: 0;
+      bottom: 0;
+      border-radius: 14px;
+      border: 7px solid white;
+      box-shadow: var(--shadow);
+    }
+
+    .about h2 {
+      font-family: "Montserrat", sans-serif;
+      color: var(--dark);
+      font-size: clamp(32px, 4vw, 46px);
+      line-height: 1.12;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 18px;
+    }
+
+    .checks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 13px;
+      margin: 28px 0 32px;
+    }
+
+    .check {
+      font-weight: 600;
+    }
+
+    .check::before {
+      content: "✓";
+      display: inline-grid;
+      place-items: center;
+      width: 23px;
+      height: 23px;
+      background: var(--cream);
+      color: var(--tan);
+      border-radius: 50%;
+      margin-right: 8px;
+      font-size: 13px;
+    }
+
+    /* PROJECTS */
+
+    .projects {
+      background: var(--dark);
+      color: white;
+    }
+
+    .projects .section-heading h2 {
+      color: white;
+    }
+
+    .projects .section-heading p {
+      color: rgba(255,255,255,.65);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr .75fr;
+      grid-template-rows: 260px 260px;
+      gap: 15px;
+    }
+
+    .project {
+      overflow: hidden;
+      border-radius: 12px;
+      position: relative;
+    }
+
+    .project:first-child {
+      grid-row: span 2;
+    }
+
+    .project img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .35s;
+    }
+
+    .project:hover img {
+      transform: scale(1.04);
+    }
+
+    .project-label {
+      position: absolute;
+      left: 18px;
+      bottom: 18px;
+      background: rgba(18,20,19,.88);
+      color: white;
+      padding: 9px 13px;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    /* WHY */
+
+    .why {
+      background: white;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .why-card {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 32px;
+    }
+
+    .why-number {
+      font-family: "Montserrat", sans-serif;
+      color: var(--tan);
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .why-card h3 {
+      font-family: "Montserrat", sans-serif;
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+
+    .why-card p {
+      color: var(--muted);
+    }
+
+    /* CTA */
+
+    .cta {
+      background: var(--tan);
+      padding: 80px 0;
+    }
+
+    .cta-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .cta h2 {
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-size: clamp(32px, 4vw, 47px);
+      line-height: 1.1;
+    }
+
+    .cta p {
+      color: rgba(255,255,255,.85);
+      margin-top: 10px;
+      font-size: 17px;
+    }
+
+    .cta .btn {
+      background: var(--dark);
+      color: white;
+      white-space: nowrap;
+    }
+
+    .cta .btn:hover {
+      background: white;
+      color: var(--dark);
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #111412;
+      color: rgba(255,255,255,.65);
+      padding: 65px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 55px;
+      margin-bottom: 45px;
+    }
+
+    footer h3 {
+      font-family: "Montserrat", sans-serif;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 9px;
+    }
+
+    footer a:hover {
+      color: var(--tan-light);
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 23px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:950px) {
+      nav a:not(.nav-cta) {
+        display: none;
+      }
+
+      .service-grid,
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+      }
+
+      .project:first-child {
+        grid-row: auto;
+        grid-column: span 2;
+      }
+
+      .project {
+        height: 300px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media(max-width:700px) {
+      .demo-bar {
+        font-size: 11px;
+      }
+
+      .topbar-inner {
+        justify-content: center;
+      }
+
+      .top-message {
+        display: none;
+      }
+
+      .nav {
+        min-height: 74px;
+      }
+
+      .logo {
+        font-size: 14px;
+      }
+
+      .nav-cta {
+        padding: 10px 12px;
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 650px;
+        background:
+          linear-gradient(rgba(15,18,17,.86), rgba(15,18,17,.86)),
+          url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .hero h1 {
+        letter-spacing: -1px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .trust-item:nth-child(2) {
+        border-right: none;
+      }
+
+      .trust-item:nth-child(-n+2) {
+        border-bottom: 1px solid var(--border);
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .about-main {
+        height: 430px;
+      }
+
+      .about-small {
+        width: 190px;
+        height: 145px;
+      }
+
+      .checks {
+        grid-template-columns: 1fr;
+      }
+
+      .project-grid {
+        display: block;
+      }
+
+      .project {
+        height: 300px;
+        margin-bottom: 15px;
+      }
+
+      .cta-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="demo-bar">
+    <strong>WEBSITE CONCEPT</strong> — Prepared by DawgsWeb • Athens, Georgia
+  </div>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="top-message">
+        Residential Construction & Remodeling • Athens Area
+      </div>
+
+      <a href="tel:7062551701">
+        Call (706) 255-1701
+      </a>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+
+      <a href="#" class="logo">
+        Classic Construction
+        <span>& Remodeling</span>
+      </a>
+
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#projects">Our Work</a>
+        <a href="#why">Why Classic</a>
+
+        <a href="tel:7062551701" class="nav-cta">
+          Request an Estimate
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          Athens Area Construction & Remodeling
+        </div>
+
+        <h1>
+          Built Right.<br>
+          <span>Built to Last.</span>
+        </h1>
+
+        <p>
+          From kitchens and bathrooms to additions, custom cabinetry
+          and complete home projects, Classic Construction & Remodeling
+          brings craftsmanship and experience to every job.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="tel:7062551701" class="btn btn-primary">
+            Request an Estimate
+          </a>
+
+          <a href="#projects" class="btn btn-outline">
+            View Our Work
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+
+  <div class="trust">
+    <div class="container trust-grid">
+
+      <div class="trust-item">
+        <strong>Custom Remodeling</strong>
+        <span>Designed Around Your Home</span>
+      </div>
+
+      <div class="trust-item">
+        <strong>Custom Homes</strong>
+        <span>From Concept to Completion</span>
+      </div>
+
+      <div class="trust-item">
+        <strong>Custom Cabinetry</strong>
+        <span>Craftsmanship in the Details</span>
+      </div>
+
+      <div class="trust-item">
+        <strong>Athens Area</strong>
+        <span>Local Residential Contractor</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+
+  <section class="services" id="services">
+
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="eyebrow">What We Build</div>
+
+        <h2>
+          One Contractor. Your Entire Project.
+        </h2>
+
+        <p>
+          Whether you're updating one room or transforming your entire
+          home, Classic Construction & Remodeling can take your project
+          from idea to finished space.
+        </p>
+      </div>
+
+      <div class="service-grid">
+
+        <article class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80"
+            alt="Custom kitchen remodel">
+
+          <div class="service-content">
+            <h3>Kitchen Remodeling</h3>
+            <p>
+              Transform the heart of your home with updated layouts,
+              cabinetry, finishes, tile and thoughtful craftsmanship.
+            </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=900&q=80"
+            alt="Bathroom renovation">
+
+          <div class="service-content">
+            <h3>Bathroom Remodeling</h3>
+            <p>
+              Create a more comfortable and beautiful bathroom with
+              custom tile, updated fixtures and quality finish work.
+            </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
+            alt="Beautiful custom home">
+
+          <div class="service-content">
+            <h3>Custom Homes</h3>
+            <p>
+              Bring your vision to life with residential construction
+              built around the way you want to live.
+            </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80"
+            alt="Home addition">
+
+          <div class="service-content">
+            <h3>Additions & Renovations</h3>
+            <p>
+              Add useful living space while creating an addition that
+              feels like it has always belonged to your home.
+            </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=900&q=80"
+            alt="Custom cabinetry">
+
+          <div class="service-content">
+            <h3>Custom Cabinetry</h3>
+            <p>
+              Built-ins and custom cabinetry designed to provide
+              beautiful, functional storage that fits your space.
+            </p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80"
+            alt="Residential construction">
+
+          <div class="service-content">
+            <h3>Home Improvements</h3>
+            <p>
+              From carpentry and tile to roofing and other residential
+              improvements, tackle your project with one experienced team.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+
+  <section class="about" id="about">
+
+    <div class="container about-grid">
+
+      <div class="about-images">
+
+        <img
+          class="about-main"
+          src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1100&q=85"
+          alt="Beautiful remodeled home interior">
+
+        <img
+          class="about-small"
+          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=700&q=80"
+          alt="Detailed home construction finish">
+
+      </div>
+
+      <div>
+
+        <div class="eyebrow">
+          Classic Craftsmanship
+        </div>
+
+        <h2>
+          Your Home Deserves More Than a Cookie-Cutter Solution.
+        </h2>
+
+        <p>
+          Every home is different. Every homeowner has different needs.
+          That's why great remodeling starts by understanding the project
+          before the first piece of material is installed.
+        </p>
+
+        <p>
+          Classic Construction & Remodeling handles projects ranging
+          from individual room renovations and cabinetry to additions
+          and larger residential construction.
+        </p>
+
+        <div class="checks">
+          <div class="check">Kitchen Remodels</div>
+          <div class="check">Bathroom Remodels</div>
+          <div class="check">Custom Cabinetry</div>
+          <div class="check">Home Additions</div>
+          <div class="check">Custom Tile</div>
+          <div class="check">Custom Homes</div>
+        </div>
+
+        <a href="tel:7062551701" class="btn btn-primary">
+          Talk About Your Project
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT GALLERY -->
+
+  <section class="projects" id="projects">
+
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="eyebrow">Imagine What's Possible</div>
+
+        <h2>
+          Spaces You'll Love Coming Home To.
+        </h2>
+
+        <p>
+          Kitchens, bathrooms, additions and living spaces designed
+          to look beautiful and work better for everyday life.
+        </p>
+      </div>
+
+      <div class="project-grid">
+
+        <div class="project">
+          <img
+            src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1100&q=85"
+            alt="Home renovation">
+          <div class="project-label">Whole-Home Renovations</div>
+        </div>
+
+        <div class="project">
+          <img
+            src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=800&q=80"
+            alt="Kitchen remodeling">
+          <div class="project-label">Kitchens</div>
+        </div>
+
+        <div class="project">
+          <img
+            src="https://images.unsplash.com/photo-1564540574859-0dfb63985953?auto=format&fit=crop&w=800&q=80"
+            alt="Bathroom remodeling">
+          <div class="project-label">Bathrooms</div>
+        </div>
+
+        <div class="project">
+          <img
+            src="https://images.unsplash.com/photo-1600566753051-f0b89df2dd90?auto=format&fit=crop&w=800&q=80"
+            alt="Custom home interior">
+          <div class="project-label">Custom Interiors</div>
+        </div>
+
+        <div class="project">
+          <img
+            src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&fit=crop&w=800&q=80"
+            alt="Home addition">
+          <div class="project-label">Additions</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+
+  <section class="why" id="why">
+
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="eyebrow">Why Classic?</div>
+
+        <h2>
+          It's the Details That Make a House Feel Like Home.
+        </h2>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card">
+          <div class="why-number">01</div>
+          <h3>Craftsmanship</h3>
+          <p>
+            Quality finish work and attention to the small details
+            help turn a renovation into a space you'll enjoy for years.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-number">02</div>
+          <h3>Experience</h3>
+          <p>
+            From remodeling older homes to larger residential projects,
+            experience helps solve the challenges that appear along the way.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-number">03</div>
+          <h3>Complete Projects</h3>
+          <p>
+            Kitchens, bathrooms, additions, cabinetry, tile and more —
+            one contractor can coordinate the different pieces of your project.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container cta-inner">
+
+      <div>
+        <h2>
+          Thinking About Your Next Home Project?
+        </h2>
+
+        <p>
+          Tell Classic Construction & Remodeling what you have in mind.
+        </p>
+      </div>
+
+      <a href="tel:7062551701" class="btn">
+        Call (706) 255-1701
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <h3>Classic Construction & Remodeling</h3>
+
+          <p>
+            Residential construction, remodeling, custom cabinetry
+            and home improvements serving the greater Athens,
+            Georgia area.
+          </p>
+        </div>
+
+        <div>
+          <h3>Services</h3>
+
+          <div class="footer-links">
+            <a href="#services">Kitchen Remodeling</a>
+            <a href="#services">Bathroom Remodeling</a>
+            <a href="#services">Custom Homes</a>
+            <a href="#services">Home Additions</a>
+            <a href="#services">Custom Cabinetry</a>
+          </div>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+
+          <div class="footer-links">
+            <a href="tel:7062551701">(706) 255-1701</a>
+            <span>Greater Athens, Georgia Area</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        © 2026 Classic Construction & Remodeling
+        <br><br>
+        Website concept prepared by DawgsWeb • Athens, Georgia
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
