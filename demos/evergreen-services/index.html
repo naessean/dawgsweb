@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Evergreen Services of GA | Handyman, Lawn Care & Pressure Washing</title>
+
+  <meta name="description"
+        content="Evergreen Services of GA provides handyman services, lawn maintenance and pressure washing for homeowners in Athens, Georgia and surrounding communities.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+  <style>
+
+    :root {
+      --green: #24523d;
+      --green-dark: #132f24;
+      --green-deep: #0b2118;
+      --green-light: #e9f1ec;
+      --sage: #91a996;
+
+      --gold: #d7aa58;
+      --gold-light: #f3e4c6;
+
+      --white: #ffffff;
+      --cream: #f8f6f0;
+      --offwhite: #f5f7f5;
+
+      --text: #26332d;
+      --muted: #6b756f;
+      --border: #e2e7e3;
+
+      --radius: 18px;
+      --shadow: 0 20px 45px rgba(14, 40, 29, .12);
+    }
+
+
+    /* ========================================
+       RESET
+    ======================================== */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: var(--text);
+      background: white;
+      line-height: 1.65;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1180px, 90%);
+      margin: auto;
+    }
+
+
+    /* ========================================
+       DAWGSWEB DEMO BAR
+    ======================================== */
+
+    .demo-bar {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 8px 15px;
+      font-size: 13px;
+      letter-spacing: .3px;
+    }
+
+    .demo-bar strong {
+      color: #f3bd55;
+    }
+
+
+    /* ========================================
+       TOP BAR
+    ======================================== */
+
+    .topbar {
+      background: var(--green-deep);
+      color: rgba(255,255,255,.9);
+      font-size: 14px;
+    }
+
+    .topbar-inner {
+      min-height: 42px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .topbar a {
+      color: white;
+      font-weight: 600;
+    }
+
+    .topbar a:hover {
+      color: var(--gold);
+    }
+
+
+    /* ========================================
+       NAVIGATION
+    ======================================== */
+
+    header {
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 3px 15px rgba(0,0,0,.06);
+    }
+
+    .nav {
+      min-height: 88px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+    }
+
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--green);
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 24px;
+    }
+
+    .logo-name {
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.05;
+      color: var(--green-dark);
+    }
+
+    .logo-name span {
+      display: block;
+      margin-top: 5px;
+      color: var(--gold);
+      font-family: "DM Sans", sans-serif;
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing: 2.2px;
+      font-weight: 700;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-weight: 600;
+    }
+
+    nav a {
+      transition: .2s;
+    }
+
+    nav a:hover {
+      color: var(--green);
+    }
+
+    .nav-cta {
+      background: var(--green);
+      color: white;
+      padding: 13px 20px;
+      border-radius: 8px;
+    }
+
+    .nav-cta:hover {
+      background: var(--green-dark);
+      color: white;
+    }
+
+
+    /* ========================================
+       HERO
+    ======================================== */
+
+    .hero {
+      min-height: 680px;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(7,29,20,.95) 0%,
+          rgba(7,29,20,.88) 43%,
+          rgba(7,29,20,.30) 100%
+        ),
+        url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1900&q=85");
+
+      background-size: cover;
+      background-position: center;
+
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 730px;
+      padding: 90px 0;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 2.4px;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: clamp(43px, 6vw, 72px);
+      line-height: 1.02;
+      letter-spacing: -2px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 span {
+      color: #e6c277;
+    }
+
+    .hero p {
+      max-width: 620px;
+      font-size: 19px;
+      color: rgba(255,255,255,.86);
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--green-deep);
+    }
+
+    .btn-primary:hover {
+      background: white;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 2px solid rgba(255,255,255,.75);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--green-dark);
+    }
+
+
+    /* ========================================
+       SERVICE INTRO
+    ======================================== */
+
+    .service-strip {
+      background: white;
+      position: relative;
+      z-index: 5;
+      box-shadow: 0 -8px 30px rgba(0,0,0,.07);
+    }
+
+    .service-strip-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .mini-service {
+      padding: 30px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      border-right: 1px solid var(--border);
+    }
+
+    .mini-service:last-child {
+      border-right: none;
+    }
+
+    .mini-icon {
+      font-size: 30px;
+    }
+
+    .mini-service strong {
+      display: block;
+      color: var(--green-dark);
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .mini-service span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+
+    /* ========================================
+       COMMON SECTIONS
+    ======================================== */
+
+    section {
+      padding: 95px 0;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: clamp(31px, 4vw, 45px);
+      line-height: 1.15;
+      color: var(--green-dark);
+      margin-bottom: 16px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+
+    /* ========================================
+       SERVICES
+    ======================================== */
+
+    .services {
+      background: var(--offwhite);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,.06);
+      transition: .25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow);
+    }
+
+    .service-card img {
+      height: 245px;
+      object-fit: cover;
+    }
+
+    .service-body {
+      padding: 29px;
+    }
+
+    .service-number {
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .service-body h3 {
+      font-family: "Montserrat", sans-serif;
+      color: var(--green-dark);
+      font-size: 22px;
+      margin-bottom: 11px;
+    }
+
+    .service-body p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .learn {
+      color: var(--green);
+      font-weight: 700;
+    }
+
+
+    /* ========================================
+       ONE CALL SECTION
+    ======================================== */
+
+    .one-call {
+      background: white;
+    }
+
+    .one-call-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .one-call-image {
+      position: relative;
+    }
+
+    .one-call-image img {
+      height: 560px;
+      object-fit: cover;
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .image-badge {
+      position: absolute;
+      bottom: 25px;
+      right: -25px;
+      background: var(--gold);
+      color: var(--green-deep);
+      padding: 22px 27px;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      font-weight: 700;
+    }
+
+    .image-badge strong {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-size: 24px;
+    }
+
+    .one-call h2 {
+      font-family: "Montserrat", sans-serif;
+      color: var(--green-dark);
+      font-size: clamp(32px, 4vw, 46px);
+      line-height: 1.13;
+      margin-bottom: 20px;
+    }
+
+    .one-call p {
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 18px;
+    }
+
+    .feature-list {
+      margin: 28px 0 33px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .feature {
+      font-weight: 600;
+    }
+
+    .feature::before {
+      content: "✓";
+      display: inline-grid;
+      place-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--green-light);
+      color: var(--green);
+      margin-right: 8px;
+      font-size: 13px;
+    }
+
+
+    /* ========================================
+       WHY CHOOSE US
+    ======================================== */
+
+    .why {
+      background: var(--green-dark);
+      color: white;
+    }
+
+    .why .section-heading h2 {
+      color: white;
+    }
+
+    .why .section-heading p {
+      color: rgba(255,255,255,.68);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .why-card {
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.055);
+      padding: 31px 25px;
+      border-radius: 16px;
+    }
+
+    .why-icon {
+      font-size: 30px;
+      margin-bottom: 16px;
+    }
+
+    .why-card h3 {
+      font-family: "Montserrat", sans-serif;
+      margin-bottom: 9px;
+      font-size: 18px;
+    }
+
+    .why-card p {
+      color: rgba(255,255,255,.68);
+      font-size: 15px;
+    }
+
+
+    /* ========================================
+       PROCESS
+    ======================================== */
+
+    .process {
+      background: var(--cream);
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+    }
+
+    .process-step {
+      text-align: center;
+    }
+
+    .step-number {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: var(--green);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-family: "Montserrat", sans-serif;
+      font-size: 21px;
+      font-weight: 800;
+    }
+
+    .process-step h3 {
+      color: var(--green-dark);
+      font-family: "Montserrat", sans-serif;
+      margin-bottom: 9px;
+    }
+
+    .process-step p {
+      color: var(--muted);
+    }
+
+
+    /* ========================================
+       SERVICE AREA
+    ======================================== */
+
+    .service-area {
+      background: white;
+    }
+
+    .area-box {
+      max-width: 950px;
+      margin: auto;
+      background: var(--green-light);
+      border-radius: 22px;
+      padding: 55px;
+      text-align: center;
+    }
+
+    .area-box h2 {
+      font-family: "Montserrat", sans-serif;
+      color: var(--green-dark);
+      font-size: clamp(30px, 4vw, 42px);
+      margin-bottom: 15px;
+    }
+
+    .area-box p {
+      color: var(--muted);
+      max-width: 700px;
+      margin: auto;
+      font-size: 17px;
+    }
+
+    .areas {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .area {
+      background: white;
+      border-radius: 30px;
+      padding: 9px 17px;
+      font-weight: 600;
+      color: var(--green-dark);
+      font-size: 14px;
+    }
+
+
+    /* ========================================
+       CTA
+    ======================================== */
+
+    .cta {
+      background: var(--gold);
+      padding: 80px 0;
+    }
+
+    .cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .cta h2 {
+      font-family: "Montserrat", sans-serif;
+      color: var(--green-deep);
+      font-size: clamp(31px, 4vw, 45px);
+      line-height: 1.15;
+    }
+
+    .cta p {
+      margin-top: 8px;
+      color: #554522;
+      font-size: 17px;
+    }
+
+    .cta .btn {
+      background: var(--green-deep);
+      color: white;
+      white-space: nowrap;
+    }
+
+    .cta .btn:hover {
+      background: white;
+      color: var(--green-deep);
+    }
+
+
+    /* ========================================
+       FOOTER
+    ======================================== */
+
+    footer {
+      background: var(--green-deep);
+      color: rgba(255,255,255,.72);
+      padding: 65px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 55px;
+      margin-bottom: 50px;
+    }
+
+    footer h3 {
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      margin-bottom: 16px;
+    }
+
+    footer p,
+    footer a,
+    footer span {
+      font-size: 15px;
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 9px;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 23px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+
+    /* ========================================
+       MOBILE
+    ======================================== */
+
+    @media (max-width: 950px) {
+
+      nav a:not(.nav-cta) {
+        display: none;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .one-call-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .image-badge {
+        right: 20px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+
+    @media (max-width: 700px) {
+
+      .demo-bar {
+        font-size: 11px;
+      }
+
+      .topbar-inner {
+        justify-content: center;
+      }
+
+      .topbar-message {
+        display: none;
+      }
+
+      .nav {
+        min-height: 74px;
+      }
+
+      .logo-name {
+        font-size: 15px;
+      }
+
+      .logo-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+      }
+
+      .nav-cta {
+        font-size: 12px;
+        padding: 10px 12px;
+      }
+
+      .hero {
+        min-height: 630px;
+
+        background:
+          linear-gradient(
+            rgba(7,29,20,.88),
+            rgba(7,29,20,.88)
+          ),
+          url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1000&q=80");
+
+        background-size: cover;
+        background-position: center;
+      }
+
+      .hero h1 {
+        letter-spacing: -1px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .service-strip-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .mini-service {
+        justify-content: flex-start;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .mini-service:last-child {
+        border-bottom: none;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .one-call-image img {
+        height: 410px;
+      }
+
+      .feature-list {
+        grid-template-columns: 1fr;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .area-box {
+        padding: 40px 22px;
+      }
+
+      .cta-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- ========================================
+     DAWGSWEB CONCEPT NOTICE
+======================================== -->
+
+<div class="demo-bar">
+  <strong>WEBSITE CONCEPT</strong> — Prepared by DawgsWeb • Athens, Georgia
+</div>
+
+
+<!-- ========================================
+     TOP BAR
+======================================== -->
+
+<div class="topbar">
+
+  <div class="container topbar-inner">
+
+    <div class="topbar-message">
+      Local Property Services • Free Estimates
+    </div>
+
+    <div>
+      <a href="tel:6789776785">
+        Call or Text: (678) 977-6785
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ========================================
+     NAVIGATION
+======================================== -->
+
+<header>
+
+  <div class="container nav">
+
+    <a href="#" class="logo">
+
+      <div class="logo-icon">
+        🌲
+      </div>
+
+      <div class="logo-name">
+        EVERGREEN SERVICES
+        <span>of Georgia</span>
+      </div>
+
+    </a>
+
+
+    <nav>
+
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#process">How It Works</a>
+
+      <a href="sms:6789776785" class="nav-cta">
+        Free Estimate
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<!-- ========================================
+     HERO
+======================================== -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        Property Services • Athens, Georgia
+      </div>
+
+      <h1>
+        One Call.<br>
+        <span>Your Property Taken Care Of.</span>
+      </h1>
+
+      <p>
+        Handyman services, lawn maintenance and pressure washing
+        from one local company. Evergreen Services of GA helps
+        homeowners keep their property looking its best.
+      </p>
+
+
+      <div class="hero-buttons">
+
+        <a href="sms:6789776785" class="btn btn-primary">
+          Get a Free Estimate
+        </a>
+
+        <a href="#services" class="btn btn-outline">
+          Explore Our Services
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================
+     THREE CORE SERVICES
+======================================== -->
+
+<div class="service-strip">
+
+  <div class="container service-strip-grid">
+
+    <div class="mini-service">
+
+      <div class="mini-icon">🔨</div>
+
+      <div>
+        <strong>Handyman Services</strong>
+        <span>Repairs & property projects</span>
+      </div>
+
+    </div>
+
+
+    <div class="mini-service">
+
+      <div class="mini-icon">🌿</div>
+
+      <div>
+        <strong>Lawn Maintenance</strong>
+        <span>Keep your property looking sharp</span>
+      </div>
+
+    </div>
+
+
+    <div class="mini-service">
+
+      <div class="mini-icon">💦</div>
+
+      <div>
+        <strong>Pressure Washing</strong>
+        <span>Restore your property's curb appeal</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ========================================
+     SERVICES
+======================================== -->
+
+<section class="services" id="services">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+        How We Can Help
+      </div>
+
+      <h2>
+        One Local Company. Three Ways to Take Care of Your Property.
+      </h2>
+
+      <p>
+        From projects around the house to the lawn outside,
+        Evergreen makes property maintenance simpler.
+      </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+
+      <!-- HANDYMAN -->
+
+      <article class="service-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80"
+          alt="Handyman working on a home">
+
+        <div class="service-body">
+
+          <div class="service-number">
+            Service 01
+          </div>
+
+          <h3>
+            Handyman Services
+          </h3>
+
+          <p>
+            Have projects piling up around the house?
+            Evergreen can help tackle repairs, maintenance
+            and those jobs you've been meaning to get done.
+          </p>
+
+          <a href="sms:6789776785" class="learn">
+            Ask About Your Project →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- LAWN -->
+
+      <article class="service-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=900&q=80"
+          alt="Professional lawn maintenance">
+
+        <div class="service-body">
+
+          <div class="service-number">
+            Service 02
+          </div>
+
+          <h3>
+            Lawn Maintenance
+          </h3>
+
+          <p>
+            Spend less time worrying about the yard and more
+            time enjoying it with dependable lawn maintenance
+            that keeps your property neat and cared for.
+          </p>
+
+          <a href="sms:6789776785" class="learn">
+            Request Lawn Service →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- PRESSURE WASHING -->
+
+      <article class="service-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=900&q=80"
+          alt="Exterior property cleaning">
+
+        <div class="service-body">
+
+          <div class="service-number">
+            Service 03
+          </div>
+
+          <h3>
+            Pressure Washing
+          </h3>
+
+          <p>
+            Remove dirt and buildup from exterior surfaces
+            and bring back the clean appearance that makes
+            your home and property stand out.
+          </p>
+
+          <a href="sms:6789776785" class="learn">
+            Get a Washing Estimate →
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================
+     ONE CALL / ABOUT
+======================================== -->
+
+<section class="one-call" id="about">
+
+  <div class="container one-call-grid">
+
+
+    <div class="one-call-image">
+
+      <img
+        src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1100&q=85"
+        alt="Well maintained Georgia home">
+
+      <div class="image-badge">
+        <strong>Local Service</strong>
+        Georgia homeowners helping Georgia homeowners.
+      </div>
+
+    </div>
+
+
+    <div>
+
+      <div class="eyebrow">
+        Less Hassle. More Done.
+      </div>
+
+      <h2>
+        Your To-Do List Just Got a Lot Shorter.
+      </h2>
+
+      <p>
+        Owning a home means there's always something that needs
+        fixing, cleaning or maintaining.
+      </p>
+
+      <p>
+        Evergreen Services of GA gives homeowners one convenient
+        place to turn for everyday property maintenance — inside
+        and outside.
+      </p>
+
+
+      <div class="feature-list">
+
+        <div class="feature">
+          Free Estimates
+        </div>
+
+        <div class="feature">
+          Local Service
+        </div>
+
+        <div class="feature">
+          Multiple Services
+        </div>
+
+        <div class="feature">
+          Easy Text Contact
+        </div>
+
+        <div class="feature">
+          Home Maintenance
+        </div>
+
+        <div class="feature">
+          Outdoor Care
+        </div>
+
+      </div>
+
+
+      <a href="sms:6789776785" class="btn btn-primary">
+        Text Evergreen Today
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================
+     WHY EVERGREEN
+======================================== -->
+
+<section class="why">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+        Why Evergreen?
+      </div>
+
+      <h2>
+        Property Maintenance Doesn't Need to Be Complicated.
+      </h2>
+
+      <p>
+        One local contact for the everyday projects that keep
+        your home and property looking their best.
+      </p>
+
+    </div>
+
+
+    <div class="why-grid">
+
+
+      <div class="why-card">
+
+        <div class="why-icon">🏠</div>
+
+        <h3>One Company</h3>
+
+        <p>
+          Instead of calling multiple contractors, start with
+          one local property-services company.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <div class="why-icon">📱</div>
+
+        <h3>Easy to Reach</h3>
+
+        <p>
+          Have a project in mind? Call or text and tell
+          Evergreen what you need.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <div class="why-icon">🌿</div>
+
+        <h3>Inside & Outside</h3>
+
+        <p>
+          From handyman projects to lawn maintenance and
+          exterior cleaning.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <div class="why-icon">💬</div>
+
+        <h3>Free Estimates</h3>
+
+        <p>
+          Start by describing your project and requesting
+          an estimate with no obligation.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================
+     PROCESS
+======================================== -->
+
+<section class="process" id="process">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+        Simple From the Start
+      </div>
+
+      <h2>
+        Getting Your Project Done Is Easy.
+      </h2>
+
+    </div>
+
+
+    <div class="process-grid">
+
+
+      <div class="process-step">
+
+        <div class="step-number">
+          1
+        </div>
+
+        <h3>
+          Tell Us What You Need
+        </h3>
+
+        <p>
+          Call or text Evergreen and tell us about the
+          project or property service you're looking for.
+        </p>
+
+      </div>
+
+
+      <div class="process-step">
+
+        <div class="step-number">
+          2
+        </div>
+
+        <h3>
+          Get Your Estimate
+        </h3>
+
+        <p>
+          We'll discuss the job and provide an estimate
+          based on the work your property needs.
+        </p>
+
+      </div>
+
+
+      <div class="process-step">
+
+        <div class="step-number">
+          3
+        </div>
+
+        <h3>
+          Get It Taken Care Of
+        </h3>
+
+        <p>
+          Schedule the work and cross another project
+          off your property-maintenance list.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================
+     SERVICE AREA
+======================================== -->
+
+<section class="service-area">
+
+  <div class="container">
+
+    <div class="area-box">
+
+      <div class="eyebrow">
+        Local Georgia Service
+      </div>
+
+      <h2>
+        Serving Athens & Surrounding Communities
+      </h2>
+
+      <p>
+        Looking for handyman help, lawn maintenance or
+        pressure washing? Contact Evergreen to find out
+        whether service is available at your property.
+      </p>
+
+
+      <div class="areas">
+
+        <div class="area">Athens</div>
+        <div class="area">Watkinsville</div>
+        <div class="area">Bogart</div>
+        <div class="area">Oconee County</div>
+        <div class="area">Surrounding Areas</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================
+     FINAL CTA
+======================================== -->
+
+<section class="cta">
+
+  <div class="container cta-inner">
+
+    <div>
+
+      <h2>
+        What's on Your Property To-Do List?
+      </h2>
+
+      <p>
+        Tell Evergreen about it and request your free estimate.
+      </p>
+
+    </div>
+
+
+    <a href="sms:6789776785" class="btn">
+      Text (678) 977-6785
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ========================================
+     FOOTER
+======================================== -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+
+      <div>
+
+        <h3>
+          Evergreen Services of GA
+        </h3>
+
+        <p>
+          Handyman services, lawn maintenance and pressure
+          washing for homeowners in Athens and surrounding
+          Georgia communities.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Services
+        </h3>
+
+        <div class="footer-links">
+
+          <a href="#services">
+            Handyman Services
+          </a>
+
+          <a href="#services">
+            Lawn Maintenance
+          </a>
+
+          <a href="#services">
+            Pressure Washing
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Get an Estimate
+        </h3>
+
+        <div class="footer-links">
+
+          <a href="tel:6789776785">
+            Call (678) 977-6785
+          </a>
+
+          <a href="sms:6789776785">
+            Text (678) 977-6785
+          </a>
+
+          <span>
+            Athens, Georgia Area
+          </span>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 Evergreen Services of GA
+
+      <br><br>
+
+      Website concept prepared by DawgsWeb • Athens, Georgia
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
